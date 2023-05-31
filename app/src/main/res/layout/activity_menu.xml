@@ -36,11 +36,12 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/group_5"
-        tools:layout_editor_absoluteY="44dp" />
+        app:srcCompat="@drawable/group_5" />
 
     <View
         android:id="@+id/view"
@@ -49,8 +50,8 @@
         android:background="#FBFBFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.209"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.163"
+        tools:layout_editor_absoluteX="-26dp" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -105,9 +106,12 @@
         app:srcCompat="@drawable/ic_baseline_access_time_24" />
 
     <ScrollView
-        android:layout_width="410dp"
-        android:layout_height="498dp"
-        tools:layout_editor_absoluteY="233dp">
+        android:layout_width="398dp"
+        android:layout_height="552dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
 
         <LinearLayout
             android:layout_width="match_parent"
